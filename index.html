@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <title>picSTAR</title>
+    <meta name="description" content="내 손안의 전시회">
+    <meta name="author" content="Cielo">
+    <!-- Open Graph Data (OG) -->
+    <!-- 카톡 공유했을 때 나오는 것들 -->
+    <meta property="og:title" content="내 손안의 전시회" />
+    <meta property="og:style" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후 생성된 이미지 URL" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c1398806a7.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JavaScript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/pictures.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <i class="fa-solid fa-star" style="color: #06ebef;" ></i>
+            <!-- <img class="header__logo__img" src="images/star-solid.svg" alt="logo"> -->
+            <!-- 홈으로 이동하기 위해 a태그 사용 -->
+            <h1 class="header__logo_title"><a href="#">picSTAR</a></h1>
+        </div>
+        <!-- 단순 스타일링 목적으로 div 사용 -->
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a class="header__menu__item active" href="#home">Home</a></li>
+                <li><a class="header__menu__item" href="#about">About</a></li>
+                <li><a class="header__menu__item" href="#picSTAR">picSTAR 전시관</a></li>
+                <!-- <li><a class="header__menu__item" href="#production">picSTAR 제작의뢰</a></li>
+                <li><a class="header__menu__item" href="#goods">STAR's 굿즈제작</a></li>  -->
+                <li><a class="header__menu__item" href="#login">Login/Sign in</a></li>
+                <li><a class="header__menu__item" href="#mypage">Mypage</a></li>
+            </ul>
+        </nav>
+        <button class ="header__toggle" aria-label="navigation menu toggle ">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- 홈 -->
+        <section id="home">
+            <h2 class="home__title">picSTAR</h2>
+            <p class="home__description">숨겨진 STAR 작가님들의 pic을 나누는 picSTAR 입니다.<br/>
+            <ul class="posters">
+                <li class="poster"><a href="#" target="_blank">
+                    <img src="images/poster/전시회1.jpeg" alt="poster1" class="poster__img">
+                    <div class="poster__metadata">
+                        <h3 class="poster__title">겨울의 뉘앙스</h3>
+                        <p> 작가: 임수진 <br> 장소: 프로젝티파이 <br> 2023.10.31 ~ 2023.11.21</p>
+                    </div>
+                </a></li>
+                <li class="poster"><a href="#" target="_blank">
+                    <img src="images/poster/전시회2.png" alt="poster2" class="poster__img">
+                    <div class="poster__metadata">
+                        <h3 class="poster__title">Thrownness</h3>
+                        <p> 작가: 엔오브라 <br> 장소: LKIF GALLERY <br> 2023.10.24 ~ 2023.11.11</p>
+                    </div>
+                </a></li>
+                <li class="poster"><a href="#" target="_blank">
+                    <img src="images/poster/전시회3.webp" alt="poster3" class="poster__img">
+                    <div class="poster__metadata">
+                        <h3 class="poster__metadata__title">Dear Summer</h3>
+                        <p> 작가: 류주영<br> 장소: 아트사이드 갤러리 <br> 2023.10.27 ~ 2023.11.18</p>
+                    </div>
+                </a></li>
+            </ul>
+            <a class="home__contact"href="#picSTAR">Go to picSTAR!</a>
+        </section>
+         <!--picSTAR 소개  -->
+         <section id="about" class="section">
+            <h2 class="title">picSTAR 소개</h2>
+            <p class="description">숨겨진 STAR작가의 Pic과 Story를 공유하는 picSTAR입니다.</p>
+            <p>인스타그램@picstar_official을 통해 다양한 소식을 받아볼 수 있습니다.</p>
+            <p>문의사항은 DM으로 보내주세요.</p>
+         </section>
+        <!--picSTAR 전시관  -->
+        <section id="picSTAR" class="section">
+            <div class="max-container">
+                <h2 class="title">picSTAR 전시관</h2>
+                <ul class="categories">
+                    <li><button class="category category--selected" data-category="all">All<span class="category__count">8</span></button></li>
+                    <li><button class="category" data-category="풍경화">풍경화<span class="category__count">3</span></button></li>
+                    <li><button class="category" data-category="인물화">인물화<span class="category__count">3</span></button></li>
+                    <li><button class="category" data-category="정물화">정물화<span class="category__count">2</span></button></li>
+                </ul>
+                <ul class = "pictures">
+                    <li class = "picture" data-type="풍경화"><a href="#" target="_blank">
+                        <img src="images/picture/풍경화1.jpeg" alt="picture1" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름1</h3>
+                            <p>작품 설명1</p>
+                        </div>
+                    </a></li>
+                    <li class = "picture" data-type="풍경화"><a href="#" target="_blank">
+                        <img src="images/picture/풍경화2.jpeg" alt="picture2" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름2</h3>
+                            <p>작품 설명2</p>
+                        </div>
+                    </a></li>
+                    <li class = "picture" data-type="풍경화"><a href="#" target="_blank"></a>
+                        <img src="images/picture/풍경화3.jpeg" alt="picture3" class = "picture__img" />
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름3</h3>
+                            <p>작품 설명3</p>
+                        </div></li>
+                    <li class = "picture" data-type="인물화"><a href="#" target="_blank">
+                        <img src="images/picture/인물화1.jpeg" alt="picture4" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름4</h3>
+                            <p>작품 설명4</p>
+                        </div>
+                    </a></li>
+                    <li class = "picture" data-type="인물화"><a href="#" target="_blank">
+                        <img src="images/picture/인물화2.jpeg" alt="picture5" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름5</h3>
+                            <p>작품 설명5</p>
+                        </div>
+                    </a></li>
+                    <li class = "picture" data-type="인물화"><a href="#" target="_blank">
+                        <img src="images/picture/인물화3.jpeg" alt="picture6" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름6</h3>
+                            <p>작품 설명6</p>
+                        </div>
+                    </a></li>
+                    <li class = "picture" data-type="정물화"><a href="#" target="_blank">
+                        <img src="images/picture/정물화1.jpeg" alt="picture7" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름7</h3>
+                            <p>작품 설명7</p>
+                        </div>
+                    </a></li>
+                    <li class = "picture" data-type="정물화"><a href="#" target="_blank">
+                        <img src="images/picture/정물화2.jpeg" alt="picture8" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름8</h3>
+                            <p>작품 설명8</p>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        <!--picSTAR 제작의뢰 -->
+        <section id="production"></section>
+        <!--STAR's 굿즈제작 -->
+        <section id="goods"></section>
+        <!-- 로그인/회원가입 -->
+        <section id="login" class="section" >
+            <div class="form" >
+                <form class="register-form">
+                    <h2 class="title">Sign In</h2>
+                    <input type="text" placeholder="name" />
+                    <input type="password" placeholder="password" />
+                    <input type="text" placeholder="email address" />
+                    <button>create</button>
+                    <p class ="message">Already registered? <a href="#login" class="Login In">Login In</a></p>
+                </form>
+                <form class="login-form">
+                    <h2 >Login</h2>
+                    <input type="text" placeholder="username" />
+                    <input type="password" placeholder="password" />
+                    <button>login</button>
+                    <p class="message">Not registered? <a href="#login" class="Register">Create an account</a></p>
+                </form>
+            </div>
+        </section>
+        <!-- 마이페이지 -->
+        <section id="mypage" class="section">
+            <h2 class="title">My page</h2>
+            <ul class="categories">
+                <li><button class = "category" data-category="나의 picSTAR">나의 picSTAR</button></li>
+                <li><button class = "category" data-category="나의 리뷰">나의 리뷰</button></li>
+                <li><button class = "category" data-category="picSTAR 제작의뢰">picSTAR 제작의뢰</button></li>
+            </ul>
+            <ul class = "My_picSTARs">
+                <li class="My_picSTAR"></li>
+            </ul>
+            <p claa="description"></p>
+        </section>
+        <!-- Arrow up -->
+        <aside></aside>
+    </main>
+    <!-- Footer -->
+    <footer></footer>
+</body>
+</html>
