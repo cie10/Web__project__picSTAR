@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <title>picSTAR</title>
+    <meta name="description" content="내 손안의 전시회">
+    <meta name="author" content="Cielo">
+    <!-- Open Graph Data (OG) -->
+    <!-- 카톡 공유했을 때 나오는 것들 -->
+    <meta property="og:title" content="내 손안의 전시회" />
+    <meta property="og:style" content="website" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후 생성된 이미지 URL" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c1398806a7.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JavaScript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/pictures.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <i class="fa-solid fa-star" style="color: #06ebef;" ></i>
+            <!-- <img class="header__logo__img" src="images/star-solid.svg" alt="logo"> -->
+            <!-- 홈으로 이동하기 위해 a태그 사용 -->
+            <h1 class="header__logo_title"><a href="#">picSTAR</a></h1>
+        </div>
+        <button class ="header__toggle" aria-label="navigation menu toggle ">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <!-- Main -->
+    <main>
+        <!--picSTAR 전시관  -->
+        <section id="picSTAR" class="section">
+            <div class="max-container">
+                <h2 class="title">picSTAR 전시관</h2>
+                <ul class="categories">
+                    <li><button class="category category--selected" data-category="all">All<span class="category__count">8</span></button></li>
+                    <li><button class="category" data-category="풍경화">풍경화<span class="category__count">3</span></button></li>
+                    <li><button class="category" data-category="인물화">인물화<span class="category__count">3</span></button></li>
+                    <li><button class="category" data-category="정물화">정물화<span class="category__count">2</span></button></li>
+                </ul>
+                <ul class = "pictures">
+                    <li class = "picture" data-type="풍경화">
+                        <img src="./images/picture/풍경화1.jpeg" alt="picture1" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름1</h3>
+                            <p>작품 설명1</p>
+                        </div>
+                    </li>
+                    <li class = "picture" data-type="풍경화">
+                        <img src="images/picture/풍경화2.jpeg" alt="picture2" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름2</h3>
+                            <p>작품 설명2</p>
+                        </div>
+                    </li>
+                    <li class = "picture" data-type="풍경화">
+                        <img src="images/picture/풍경화3.jpeg" alt="picture3" class = "picture__img" />
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름3</h3>
+                            <p>작품 설명3</p>
+                        </div>
+                    </li>
+                    <li class = "picture" data-type="인물화">
+                        <img src="images/picture/인물화1.jpeg" alt="picture4" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름4</h3>
+                            <p>작품 설명4</p>
+                        </div>
+                    </li>
+                    <li class = "picture" data-type="인물화">
+                        <img src="images/picture/인물화2.jpeg" alt="picture5" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름5</h3>
+                            <p>작품 설명5</p>
+                        </div>
+                    </li>
+                    <li class = "picture" data-type="인물화">
+                        <img src="images/picture/인물화3.jpeg" alt="picture6" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름6</h3>
+                            <p>작품 설명6</p>
+                        </div>
+                    </li>
+                    <li class = "picture" data-type="정물화">
+                        <img src="images/picture/정물화1.jpeg" alt="picture7" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름7</h3>
+                            <p>작품 설명7</p>
+                        </div>
+                    </li>
+                    <li class = "picture" data-type="정물화">
+                        <img src="images/picture/정물화2.jpeg" alt="picture8" class = "picture__img"/>
+                        <div class="picture__metadata">
+                            <h3 class="picture__title">작품 이름8</h3>
+                            <p>작품 설명8</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+</body>
+</html>

@@ -39,10 +39,9 @@
             <ul class="header__menu">
                 <li><a class="header__menu__item active" href="#home">Home</a></li>
                 <li><a class="header__menu__item" href="#about">About</a></li>
-                <li><a class="header__menu__item" href="#picSTAR">picSTAR 전시관</a></li>
                 <li><a class="header__menu__item" href="#goods">STAR's 굿즈제작</a></li> 
                 <li><a class="header__menu__item" href="#login">Login/Sign in</a></li>
-                <!-- <li><a class="header__menu__item" href="#mypage">Mypage</a></li> -->
+                <li><a class="header__menu__item" href="#mypage">Mypage</a></li>
             </ul>
         </nav>
         <button class ="header__toggle" aria-label="navigation menu toggle ">
@@ -56,21 +55,21 @@
             <h2 class="home__title">picSTAR</h2>
             <p class="home__description">숨겨진 STAR 작가님들의 pic을 나누는 picSTAR 입니다.<br/>
             <ul class="posters">
-                <li class="poster"><a href="#" target="_blank">
+                <li class="poster"><a href="https://projectify.kr/236" target="_blank">
                     <img src="images/poster/전시회1.jpeg" alt="poster1" class="poster__img">
                     <div class="poster__metadata">
                         <h3 class="poster__title">겨울의 뉘앙스</h3>
                         <p> 작가: 임수진 <br> 장소: 프로젝티파이 <br> 2023.10.31 ~ 2023.11.21</p>
                     </div>
                 </a></li>
-                <li class="poster"><a href="#" target="_blank">
+                <li class="poster"><a href="https://lets-keep-it-fresh-gallery.com/EXHIBITION" target="_blank">
                     <img src="images/poster/전시회2.png" alt="poster2" class="poster__img">
                     <div class="poster__metadata">
                         <h3 class="poster__title">Thrownness</h3>
                         <p> 작가: 엔오브라 <br> 장소: LKIF GALLERY <br> 2023.10.24 ~ 2023.11.11</p>
                     </div>
                 </a></li>
-                <li class="poster"><a href="#" target="_blank">
+                <li class="poster"><a href="https://artside.org/" target="_blank">
                     <img src="images/poster/전시회3.webp" alt="poster3" class="poster__img">
                     <div class="poster__metadata">
                         <h3 class="poster__metadata__title">Dear Summer</h3>
@@ -78,7 +77,7 @@
                     </div>
                 </a></li>
             </ul>
-            <a class="home__contact"href="#picSTAR">Go to picSTAR!</a>
+            <a class="home__contact" onclick= "location.href='picSTAR.html'">Go to picSTAR!</a>
         </section>
          <!--picSTAR 소개  -->
          <section id="about" class="section">
@@ -87,77 +86,10 @@
             <p>인스타그램@picstar_official을 통해 다양한 소식을 받아볼 수 있습니다.</p>
             <p>문의사항은 DM으로 보내주세요.</p>
          </section>
-        <!--picSTAR 전시관  -->
-        <section id="picSTAR" class="section">
-            <div class="max-container">
-                <h2 class="title">picSTAR 전시관</h2>
-                <ul class="categories">
-                    <li><button class="category category--selected" data-category="all">All<span class="category__count">8</span></button></li>
-                    <li><button class="category" data-category="풍경화">풍경화<span class="category__count">3</span></button></li>
-                    <li><button class="category" data-category="인물화">인물화<span class="category__count">3</span></button></li>
-                    <li><button class="category" data-category="정물화">정물화<span class="category__count">2</span></button></li>
-                </ul>
-                <ul class = "pictures">
-                    <li class = "picture" data-type="풍경화"><a href="#" target="_blank">
-                        <img src="./images/picture/풍경화1.jpeg" alt="picture1" class = "picture__img"/>
-                        <div class="picture__metadata">
-                            <h3 class="picture__title">작품 이름1</h3>
-                            <p>작품 설명1</p>
-                        </div>
-                    </a></li>
-                    <li class = "picture" data-type="풍경화"><a href="#" target="_blank">
-                        <img src="images/picture/풍경화2.jpeg" alt="picture2" class = "picture__img"/>
-                        <div class="picture__metadata">
-                            <h3 class="picture__title">작품 이름2</h3>
-                            <p>작품 설명2</p>
-                        </div>
-                    </a></li>
-                    <li class = "picture" data-type="풍경화"><a href="#" target="_blank"></a>
-                        <img src="images/picture/풍경화3.jpeg" alt="picture3" class = "picture__img" />
-                        <div class="picture__metadata">
-                            <h3 class="picture__title">작품 이름3</h3>
-                            <p>작품 설명3</p>
-                        </div></li>
-                    <li class = "picture" data-type="인물화"><a href="#" target="_blank">
-                        <img src="images/picture/인물화1.jpeg" alt="picture4" class = "picture__img"/>
-                        <div class="picture__metadata">
-                            <h3 class="picture__title">작품 이름4</h3>
-                            <p>작품 설명4</p>
-                        </div>
-                    </a></li>
-                    <li class = "picture" data-type="인물화"><a href="#" target="_blank">
-                        <img src="images/picture/인물화2.jpeg" alt="picture5" class = "picture__img"/>
-                        <div class="picture__metadata">
-                            <h3 class="picture__title">작품 이름5</h3>
-                            <p>작품 설명5</p>
-                        </div>
-                    </a></li>
-                    <li class = "picture" data-type="인물화"><a href="#" target="_blank">
-                        <img src="images/picture/인물화3.jpeg" alt="picture6" class = "picture__img"/>
-                        <div class="picture__metadata">
-                            <h3 class="picture__title">작품 이름6</h3>
-                            <p>작품 설명6</p>
-                        </div>
-                    </a></li>
-                    <li class = "picture" data-type="정물화"><a href="#" target="_blank">
-                        <img src="images/picture/정물화1.jpeg" alt="picture7" class = "picture__img"/>
-                        <div class="picture__metadata">
-                            <h3 class="picture__title">작품 이름7</h3>
-                            <p>작품 설명7</p>
-                        </div>
-                    </a></li>
-                    <li class = "picture" data-type="정물화"><a href="#" target="_blank">
-                        <img src="images/picture/정물화2.jpeg" alt="picture8" class = "picture__img"/>
-                        <div class="picture__metadata">
-                            <h3 class="picture__title">작품 이름8</h3>
-                            <p>작품 설명8</p>
-                        </div>
-                    </a></li>
-                </ul>
-            </div>
-        </section>
         <!--STAR's 굿즈제작 -->
-        <section id="goods"></section>
+        <section id="goods" class="section">
+            <h2 class ="title">STAR's 굿즈제작</h2>
+        </section>
         <!-- 로그인/회원가입 -->
         <section id="login" class="section" >
             <div class="form" >

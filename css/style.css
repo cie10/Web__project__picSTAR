@@ -284,6 +284,13 @@ button:focus{
     transform: translateY(0px);
 }
 
+/* STAR's 굿즈제작 */
+#goods{
+    background-color: var(--color-black);
+    color:var(--color-text);
+}
+
+
 /* login */
 .login-box {
     position:relative;
@@ -475,5 +482,8 @@ button:focus{
     }
     .pictures{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .poster__metadata{
+        font-size:xx-small;
     }
   }
