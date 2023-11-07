@@ -286,10 +286,31 @@ button:focus{
 
 /* STAR's 굿즈제작 */
 #goods{
-    background-color: var(--color-black);
+    background-color: var(--color-primary);
     color:var(--color-text);
 }
+.goods__description{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.make__goods{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;
+    transition: all 250ms ease-out;
+}
+.make__good{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
 
+    
+}
+.make__good__img{
+    width:100%;
+    height: 100%;
+}
 
 /* login */
 .login-box {
