@@ -40,8 +40,9 @@
                 <li><a class="header__menu__item active" href="#home">Home</a></li>
                 <li><a class="header__menu__item" href="#about">About</a></li>
                 <li><a class="header__menu__item" href="#goods">STAR's 굿즈제작</a></li> 
-                <li><a class="header__menu__item" href="#login">Login/Sign in</a></li>
-                <li><a class="header__menu__item" href="#mypage">Mypage</a></li>
+                <li><a class="header__menu__item" href="#goods">picSTAR 제작의뢰</a></li> 
+                <!-- <li><a class="header__menu__item" href="#login">Login/Sign in</a></li>
+                <li><a class="header__menu__item" href="#mypage">Mypage</a></li> -->
             </ul>
         </nav>
         <button class ="header__toggle" aria-label="navigation menu toggle ">
@@ -83,7 +84,7 @@
          <section id="about" class="section">
             <h2 class="title">picSTAR 소개</h2>
             <p class="description">숨겨진 STAR작가의 Pic과 Story를 공유하는 picSTAR입니다.</p>
-            <p>인스타그램@picstar_official을 통해 다양한 소식을 받아볼 수 있습니다.</p>
+            <p>인스타그램 <a class= "picstar__instagram"href="https://www.instagram.com/picstar_official/" target="_blank" >@picstar_official</a> 통해 다양한 소식을 받아볼 수 있습니다.</p>
             <p>문의사항은 DM으로 보내주세요.</p>
          </section>
         <!--STAR's 굿즈제작 -->
@@ -111,15 +112,23 @@
                 </li>
             </ul>
         </section>
+        <!-- picSTAR 제작의뢰 -->
+        <section id="picSTAR 제작의뢰" class="section">
+            <h2 class="title">picSTAR 제작의뢰</h2>
+            <p class="description"></p>
+
+        </section>
         <!-- 로그인/회원가입 -->
-        <section id="login" class="section" >
+        <!-- <section id="login" class="section" >
             <div class="form" >
                 <form class="register-form">
                     <h2 class="title">Sign In</h2>
                     <input type="text" placeholder="name" />
                     <input type="password" placeholder="password" />
                     <input type="text" placeholder="email address" />
-                    <button>create</button>
+                    <div id="wrapper">
+                        <a class="button" href="#popup2">create</a>
+                    </div>           
                     <p class ="message">Already registered? <a href="#login" class="Login In">Login In</a></p>
                 </form>
                 <form class="login-form">
@@ -130,9 +139,28 @@
                     <p class="message">Not registered? <a href="#login" class="Register">Create an account</a></p>
                 </form>
             </div>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Login Success!</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <p>로그인이 완료되었습니다. </p>
+                    </div>
+                </div>
+            </div> -->
+            
+            <div id="popup2" class="overlay">
+                <div class="popup">
+                    <h2>Sign Up Success!</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <p>회원가입이 완료되었습니다.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- 마이페이지 -->
-        <section id="mypage" class="section">
+        <!-- <section id="mypage" class="section">
             <h2 class="title">My page</h2>
             <ul class="categories">
                 <li><button class = "category" data-category="나의 picSTAR">나의 picSTAR</button></li>
@@ -143,7 +171,7 @@
                 <li class="My_picSTAR"></li>
             </ul>
             <p claa="description"></p>
-        </section>
+        </section> -->
         <!-- Arrow up -->
         <aside></aside>
     </main>
