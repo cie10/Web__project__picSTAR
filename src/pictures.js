@@ -40,6 +40,7 @@ const span = document.querySelector(".close");
 img.addEventListener('click', ()=>{
     modalDisplay("block");
     modal_img.src = img.src;
+    // modal_img.style.width = 10px;
   });
   span.addEventListener('click', ()=>{
     modalDisplay("none");
