@@ -313,13 +313,34 @@ button:focus{
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-
-    
 }
 .make__good__img{
     width:100%;
     height: 100%;
 }
+.goods__price{
+    color:var(--color-accent);
+}
+.goods__check{
+    font-size:smaller;
+}
+
+.goods__contact{
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-black);
+    margin-top: 38px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size:x-large;
+}
+.goods__contact:hover{
+    background-color: transparent;
+    color:var(--color-text);
+    outline: 2px solid var(--color-accent);
+}
+
 
 /* login */
 
@@ -521,5 +542,8 @@ button:focus{
     }
     .poster__metadata{
         font-size:xx-small;
+    }
+    .make__goods{
+        grid-template-columns: repeat(2, 1fr);
     }
   }
