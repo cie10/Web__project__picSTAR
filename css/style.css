@@ -292,6 +292,31 @@ button:focus{
     opacity: 0.8;
     transform: translateY(0px);
 }
+/* modal */
+.picture__img{
+    .modal {
+        display: none; /* 모달창 숨겨 놓기 */
+        position: fixed; 
+        z-index: 1; /* 모달창을 제일 앞에 두기 */
+        padding-top: 100px;
+        left: 0; top: 0;
+        width: 100%; height: 100%;
+        overflow: auto; /* 스크롤 허용 auto */
+        cursor: pointer; /* 마우스 손가락모양 */
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* 모달창 이미지 */
+      .modal_content {
+        margin: auto;
+        display: block;
+        width: 50%; height: auto;
+        max-width: 1000px;
+        border-radius: 10px;
+        animation-name: zoom;
+        animation-duration: 0.8s;
+      }
+}
+
 
 /* STAR's 굿즈제작 */
 #goods{
@@ -341,6 +366,23 @@ button:focus{
     outline: 2px solid var(--color-accent);
 }
 
+/* picSTAR 제작의뢰 */
+
+.request__contact{
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-black);
+    margin:0;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size:x-large;
+}
+.request__contact:hover{
+    background-color: transparent;
+    color:var(--color-text);
+    outline: 2px solid var(--color-accent);
+}
 
 /* login */
 
@@ -539,6 +581,9 @@ button:focus{
     }
     .pictures{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .posters{
+        grid-template-columns: repeat(1, 1fr);
     }
     .poster__metadata{
         font-size:xx-small;
