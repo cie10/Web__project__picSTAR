@@ -32,22 +32,56 @@ categories.addEventListener('click',(event) => {
     }, 250);
 });
 
-const modal = document.querySelector(".modal");
-const img = document.querySelector(".picture__img");
-const modal_img = document.querySelector(".modal__content");
-const span = document.querySelector(".close");
+// const modal = document.querySelector(".modal");
+// const img = document.querySelector(".picture__img");
+// const modal_img = document.querySelector(".modal__content");
+// const span = document.querySelector(".close");
 
-img.addEventListener('click', ()=>{
-    modalDisplay("block");
-    modal_img.src = img.src;
-    // modal_img.style.width = 10px;
+// img.addEventListener('click', ()=>{
+//     modalDisplay("block");
+//     modal_img.src = img.src;
+//     modal_img.style.width = "65%";
+//     modal_img.style.height = "65%";
+//   });
+//   span.addEventListener('click', ()=>{
+//     modalDisplay("none");
+//   });
+//   modal.addEventListener('click', ()=>{
+//     modalDisplay("none");
+//   });
+//   function modalDisplay(text){
+//     modal.style.display = text;
+//   }
+// Select all picture__img elements
+const imgs = document.querySelectorAll(".picture__img");
+const modals = document.querySelectorAll(".modal");
+const modal_imgs = document.querySelectorAll(".modal__content");
+const spans = document.querySelectorAll(".close");
+
+// Loop through each picture
+imgs.forEach((img, index) => {
+  img.addEventListener('click', () => {
+    modalDisplay(index, "block");
+    modal_imgs[index].src = img.src;
+    modal_imgs[index].style.width = "65%";
+    modal_imgs[index].style.height = "65%";
   });
-  span.addEventListener('click', ()=>{
-    modalDisplay("none");
+});
+
+// Loop through each close button
+spans.forEach((span, index) => {
+  span.addEventListener('click', () => {
+    modalDisplay(index, "none");
   });
-  modal.addEventListener('click', ()=>{
-    modalDisplay("none");
+});
+
+// Loop through each modal
+modals.forEach((modal, index) => {
+  modal.addEventListener('click', () => {
+    modalDisplay(index, "none");
   });
-  function modalDisplay(text){
-    modal.style.display = text;
-  }
+});
+
+function modalDisplay(index, display) {
+  modals[index].style.display = display;
+}
