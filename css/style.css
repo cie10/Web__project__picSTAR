@@ -306,22 +306,6 @@ button:focus{
     background-color: rgba(0, 0, 0, 0.8);
     
 }
-/* 모달창 이미지 */
-/*
-.modal_content {
-    margin: auto;
-    display: block;
-    width: auto; height: auto;
-    max-height: 10px;
-    /* width: 10px; 너비 조절 */
-    /* height: 10px; 높이 조절 */
-    /*
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    animation-name: zoom;
-    animation-duration: 0.8s;
-}*/
 
 .modal_content {
     margin: auto;
@@ -374,6 +358,8 @@ button:focus{
     grid-template-rows: repeat(2, 1fr);
     gap: 0.5rem;
     transition: all 250ms ease-out;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .make__good{
     position: relative;
@@ -382,7 +368,6 @@ button:focus{
 }
 .make__good__img{
     width:100%;
-    height: 100%;
 }
 .goods__price{
     color:var(--color-accent);
@@ -421,68 +406,11 @@ button:focus{
 }
 .request__contact:hover{
     background-color: transparent;
-    color:var(--color-text);
+    color:var(--color-black);
     outline: 2px solid var(--color-accent);
 }
 
-/* login */
 
-
-.login-page{
-    width: 360px;
-    padding: 8% 0 0;
-    margin: auto;
-}
-.form{
-    position: relative;
-    background:rgba(0,0,0,.5);
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    border-radius: 10px;
-}
-.form input {
-    outline: 0;
-    background-color: #fff;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 10px 0;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-.form button {
-    font-family: sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background:var(--color-accent);
-    width: 60%;
-    border: 0;
-    padding: 15px;
-    color:var(--color-black);
-    font-size: 15px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.form button:hover,.form button:active,.form button:focus {
-    background:var(--color-white);
-}
-.form .message {
-    margin: 15px 0 0;
-    color:var(--color-black);
-    font-size: 12px;
-}
-.form .message a {
-    color:var(--color-white);
-    text-decoration: none;
-}
-.form .register-form {
-    display: none;
-}
 
 /* 팝업창 띄우기 */
 .overlay {
@@ -573,12 +501,6 @@ button:focus{
 }
 
 
-  /* My page */
-  #mypage{
-    background-color: var(--color-black);
-    color:var(--color-text);
-  }
-
   @media screen and (max-width: 768px) {
     .section {
         padding: 4rem 2rem;
@@ -626,10 +548,13 @@ button:focus{
     .posters{
         grid-template-columns: repeat(1, 1fr);
     }
-    .poster__metadata{
-        font-size:xx-small;
-    }
     .make__goods{
         grid-template-columns: repeat(2, 1fr);
+
     }
+    .make__good__img{
+        width: 100px;
+        height: 20%;
+    }
+    
   }
